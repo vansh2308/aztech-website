@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -7,17 +7,22 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Poiret One", sans-serif;
-  font-weight: 800;
+  font-family: "Montserrat", sans-serif;
 }
 
 body{
-  overflow: hidden;
+  overflow-x: hidden;
+  background-color: #E1E5ED;
 }
 
-.app{
-  background: url('./assets/bg.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+.button-shadow{
+  filter: drop-shadow(#4b4c9b 0rem 13px 40px);
 }
+.button-shadow:hover{
+  background-color: #4b4c9b;
+  cursor: pointer;
+  filter: drop-shadow(#5456ae 0rem 13px 40px);
+
+}
+
+
