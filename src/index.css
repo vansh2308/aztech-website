@@ -28,3 +28,12 @@ body{
 *::-webkit-scrollbar {
   display: none;
 }
+
+input[type="text"]{
+  background-color: transparent;
+  border-bottom: 3px solid #44458C;
+  font-size: 1.2rem;
+}
+input[type="text"]:focus{
+  outline: none;
+}
