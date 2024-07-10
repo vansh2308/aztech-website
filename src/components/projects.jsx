@@ -40,9 +40,9 @@ const projects = [
 
 export default function ProjectsSection(){
   return(
-    <section className="w-full h-fit flex flex-col items-cente py-20 px-20 bg-[#E7EBF1] text-purple-300 gap-8">
-      <h1 className="w-full text-[2.5rem] font-medium text-center mb-4"> PROJECTS </h1>
-      <div className="h-fit w-full flex  overflow-x-scroll gap-7">
+    <section className="w-full h-fit flex flex-col items-cente p-20 bg-[#E7EBF1] text-purple-300 gap-8 max-[850px]:p-5">
+      <h1 className="w-full text-[2.5rem] font-medium text-center mb-4 max-[850px]:text-2xl max-[850px]:mb-2"> PROJECTS </h1>
+      <div className="h-fit w-full flex  overflow-x-scroll gap-7 max-[850px]:flex-col">
         {
           projects.map((item, key) => {
             return(
@@ -58,7 +58,7 @@ export default function ProjectsSection(){
 function ProjectTile({item}){
 
   return(
-    <div className="w-[25vw] h-fit bg-purple-500 project-tile flex-shrink-0 rounded-lg overflow-hidden">
+    <div className="w-[25vw] h-fit bg-purple-500 project-tile flex-shrink-0 rounded-lg overflow-hidden max-[850px]:w-full">
       <img className="w-[100%] aspect-square" src={item.imgSrc} />
       <div className="w-[100%] h-[12rem] bg-purple-300 p-5 text-white flex flex-col overflow-hidden gap-3">
         <span className="text-nowrap font-semibold text-md">{item.title}</span>

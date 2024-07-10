@@ -44,3 +44,9 @@ a{
 .landing-img{
   pointer-events: none;
 }
+
+@media screen and (max-width: 850px) {
+  .contact-form input[type="text"]{
+    font-size: 0.8rem;
+  }
+}
